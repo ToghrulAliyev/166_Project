@@ -546,6 +546,7 @@ img {
   cursor: pointer;
   margin: 0.6rem 0;
   transition: .3s;
+  padding: 30px;
 }
 
 .card-item:hover {
@@ -700,6 +701,7 @@ img {
 @media screen and (max-width: 430px) {
   .card-content{
     margin-left: 0px;
+    margin-top: 20px;
   }
 }
 
@@ -718,6 +720,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     justify-content: center;
+    padding: 0 31px 0 0;
   }
 }
 
