@@ -3687,6 +3687,10 @@ button:disabled,
   min-height: 100vh;
 }
 
+/* Language button */
+
+
+
 /* Main */
 #main {
   -moz-flex-grow: 1;
