@@ -4211,6 +4211,7 @@ button:disabled,
 
 /*START NEWSLETTER CSS*/
 .subscribe {
+  padding: 0 57px 0 0;
   display: block;
   position: relative;
   margin-top: 15px;
@@ -4244,7 +4245,7 @@ width: 100%;
   position: absolute;
   right: 0;
   top: 4px;
-  width: 60px;
+  width: 90px;
 }
 .subscribe__btn i{transition: all 0.3s ease 0s;}
 @media only screen and (max-width:768px) { 
