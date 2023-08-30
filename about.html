@@ -6,6 +6,12 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous"
+  />
+	<link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -30,6 +36,18 @@
 						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li>
+							<div class="language-picker js-language-picker" data-trigger-class="li4-btn li4-btn--subtle js-tab-focus">
+							  <form action="" class="language-picker__form">                
+								<select style="    height: 37px;
+								width: 100%;" name="language-picker-select" id="language-picker-select">
+								  <option lang="de" value="deutsch">Az</option>
+								  <option lang="en" value="english" selected>Eng</option>
+								  <option lang="fr" value="francais">Rus</option>
+								</select>
+							  </form>
+							</div>
+						  </li>
 					</ul>
 				</header>
 
@@ -148,42 +166,59 @@
 			</div>
 
     <!-- Footer -->
-	<div style="width: 100%; background-color: #ffc425">
-		<section style="padding: 2em 0em 0 6em">
-		  <header class="major">
-			<h2>Get in touch</h2>
-		  </header>
-		  <p style="width: 80%">
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
-			possimus dicta sed in odio cum, iste veritatis reprehenderit
-			placeat quisquam nostrum illum voluptates dolorum molestias
-			voluptatum praesentium minus alias dolore.
-		  </p>
-		  <ul style="display: flex" class="contact">
-			<li>
-			  <i class="fa-solid fa-envelope"></i>
-			  <a href="#">information@untitled.tld</a>
-			</li>
-			<li>
-			  <i class="fa-solid fa-phone-flip"></i>
-			  <a href="#">(000) 000-0000</a>
-			</li>
-			<li>
-			  <i class="fa-solid fa-house-chimney"></i>
-			  <a href="#">
-				1234 Somewhere Road #8254<br />
-				Nashville, TN 00000-0000
-			  </a>
-			</li>
-		  </ul>
-
-		  <footer id="footer-end">
-			<p style="margin: 0" class="copyright-footer">
-			  &copy; Coopyrihgt 2023
-			</p>
-		  </footer>
-		</section>
-	  </div>
+	<div class="footer">
+		<div class="container">     
+			<div class="row">                       
+				<div class="col-lg-4 col-sm-4 col-xs-12">
+					<div class="single_footer">
+						<h4>Services</h4>
+						<ul>
+							<li><a href="#">Lorem Ipsum</a></li>
+							<li><a href="#">Simply dummy text</a></li>
+							<li><a href="#">The printing and typesetting </a></li>
+							<li><a href="#">Standard dummy text</a></li>
+							<li><a href="#">Type specimen book</a></li>
+						</ul>
+					</div>
+				</div><!--- END COL --> 
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="single_footer single_footer_address">
+						<h4>Page Link</h4>
+						<ul>
+							<li><a href="#">Lorem Ipsum</a></li>
+							<li><a href="#">Simply dummy text</a></li>
+							<li><a href="#">The printing and typesetting </a></li>
+							<li><a href="#">Standard dummy text</a></li>
+							<li><a href="#">Type specimen book</a></li>
+						</ul>
+					</div>
+				</div><!--- END COL -->
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="single_footer single_footer_address">
+						<h4>Subscribe today</h4>
+						<div class="signup_form">                           
+							<form action="#" class="subscribe">
+								<input type="text" class="subscribe__input" placeholder="Enter Email Address">
+							</form>
+						</div>
+					</div>
+					<div class="social_profile">
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>                          
+				</div><!--- END COL -->         
+			</div><!--- END ROW --> 
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 col-xs-12">
+					<p class="copyright">Copyright © 2019 <a href="#">Akdesign</a>.</p>
+				</div><!--- END COL -->                 
+			</div><!--- END ROW -->                 
+		</div><!--- END CONTAINER -->
+	</div>
 
 		</div>
 
