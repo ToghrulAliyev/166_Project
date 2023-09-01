@@ -28,43 +28,53 @@
     <div id="wrapper">
       <!-- Main -->
       <div id="main">
+        <div class="banner-slider">
+          <select
+            class="lang-picker"
+            name="language-picker-select"
+            id="language-picker-select"
+          >
+            <option lang="de" value="deutsch">Az</option>
+            <option lang="en" value="english" selected>Eng</option>
+            <option lang="fr" value="francais">Rus</option>
+          </select>
+
+          <div class="slideshow-container">
+            <div class="mySlides fades">
+              <img
+                class="hero-slider-imgs"
+                src="https://img.freepik.com/free-photo/delivery-men-loading-carboard-boxes-van-while-getting-ready-shipment_637285-2289.jpg?w=1380&t=st=1693550528~exp=1693551128~hmac=bee76aff2795a2ff0bfeef6f80238f17bd3eebace98b7da45730cd3f1682a11c"
+              />
+            </div>
+
+            <div class="mySlides fades">
+              <img
+                class="hero-slider-imgs"
+                src="https://img.freepik.com/free-photo/young-happy-manual-worker-carrying-cardboard-boxes-delivery-van-while-communicating-with-his-colleagues_637285-1260.jpg?w=1380&t=st=1693550578~exp=1693551178~hmac=6f7d0ed1a03c6840941b260ce31af385102701e71957be92532b42fb4dbe2fe6"
+              />
+            </div>
+
+            <div class="mySlides fades">
+              <img
+                class="hero-slider-imgs"
+                src="https://img.freepik.com/free-photo/delivery-male-with-packages_23-2148869434.jpg?w=1380&t=st=1693550628~exp=1693551228~hmac=13ddb454cc83e7ec8c45bfc3747d7411189265809ce38b9149e23e1142628332"
+              />
+            </div>
+          </div>
+          <br />
+
+          <div class="slider-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
         <div class="inner">
           <!-- Header -->
-          <header id="header">
-            <ul class="icons">
-              <li>
-                <a href="#" class="icon brands fa-twitter"
-                  ><span class="label">Twitter</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands fa-facebook-f"
-                  ><span class="label">Facebook</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands fa-instagram"
-                  ><span class="label">Instagram</span></a
-                >
-              </li>
-              <li>
-                <div class="language-picker js-language-picker" data-trigger-class="li4-btn li4-btn--subtle js-tab-focus">
-                  <form action="" class="language-picker__form">                
-                    <select style="padding: 0px 44px 2px 8px; height: 37px; width: 100%;" name="language-picker-select" id="language-picker-select">
-
-                      <option lang="de" value="deutsch">Az</option>
-                      <option lang="en" value="english" selected>Eng</option>
-                      <option lang="fr" value="francais">Rus</option>
-                    </select>
-                  </form>
-                </div>
-              </li>
-            </ul>
-          </header>
 
           <!-- Banner -->
           <section id="banner">
-            <div class="content">
+            <!-- <div class="content">
               <header>
                 <h1>Lorem ipsum dolor sit amet consectetur.</h1>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -84,7 +94,11 @@
             </div>
             <span class="image object">
               <img src="images/pic10.jpg" alt="" />
-            </span>
+            </span> -->
+
+            <!-- <div class="banner-slider">
+              test
+            </div> -->
           </section>
 
           <!-- Section -->
@@ -192,8 +206,13 @@
               </article>
             </div>
 
-            <div style="display: flex; justify-content: center; padding: 35px;" class="all-xidmet">
-              <button style="padding: 1px 24px 10px 24px; border-radius: 5px;"><p class="xidmet" style="color: #ffc425;">Butun Xidmetler</p></button>
+            <div
+              style="display: flex; justify-content: center; padding: 35px"
+              class="all-xidmet"
+            >
+              <button style="padding: 1px 24px 10px 24px; border-radius: 5px">
+                <p class="xidmet" style="color: #ffc425">Butun Xidmetler</p>
+              </button>
             </div>
           </section>
 
@@ -209,56 +228,99 @@
               <ul class="carousel">
                 <li class="card">
                   <div class="img">
-                    <img src="./assets/images/664b7211c9bb73250b88c8ad3bcf43f0.png" alt="img" draggable="false" />
+                    <img
+                      src="./assets/images/664b7211c9bb73250b88c8ad3bcf43f0.png"
+                      alt="img"
+                      draggable="false"
+                    />
                   </div>
                   <h2>Blanche Pearson</h2>
                   <span>Sales Manager</span>
-                  <button style="padding: 2px 8px 8px 8px; width: 20%;     margin: 8px;">More</button>
-
+                  <button
+                    style="padding: 2px 8px 8px 8px; width: 20%; margin: 8px"
+                  >
+                    More
+                  </button>
                 </li>
                 <li class="card">
                   <div class="img">
-                    <img src="./assets/images/c4b735e0192ca3fd4062ff60e3be8b55.png" alt="img" draggable="false" />
+                    <img
+                      src="./assets/images/c4b735e0192ca3fd4062ff60e3be8b55.png"
+                      alt="img"
+                      draggable="false"
+                    />
                   </div>
                   <h2>Joenas Brauers</h2>
                   <span>Web Developer</span>
-                  <button style="padding: 2px 8px 8px 8px; width: 20%;     margin: 8px;">More</button>
-
+                  <button
+                    style="padding: 2px 8px 8px 8px; width: 20%; margin: 8px"
+                  >
+                    More
+                  </button>
                 </li>
                 <li class="card">
                   <div class="img">
-                    <img src="./assets/images/cc37cf76659d0f24afc10496affde826.png" alt="img" draggable="false" />
+                    <img
+                      src="./assets/images/cc37cf76659d0f24afc10496affde826.png"
+                      alt="img"
+                      draggable="false"
+                    />
                   </div>
                   <h2>Lariach French</h2>
                   <span>Online Teacher</span>
-                  <button style="padding: 2px 8px 8px 8px; width: 20%;     margin: 8px;">More</button>
-
+                  <button
+                    style="padding: 2px 8px 8px 8px; width: 20%; margin: 8px"
+                  >
+                    More
+                  </button>
                 </li>
                 <li class="card">
                   <div class="img">
-                    <img src="./assets/images/ed66c37c0b4f38ef469d56302f844eb5.png" alt="img" draggable="false" />
+                    <img
+                      src="./assets/images/ed66c37c0b4f38ef469d56302f844eb5.png"
+                      alt="img"
+                      draggable="false"
+                    />
                   </div>
                   <h2>James Khosravi</h2>
                   <span>Freelancer</span>
-                  <button style="padding: 2px 8px 8px 8px; width: 20%;     margin: 8px;">More</button>
-
+                  <button
+                    style="padding: 2px 8px 8px 8px; width: 20%; margin: 8px"
+                  >
+                    More
+                  </button>
                 </li>
                 <li class="card">
                   <div class="img">
-                    <img src="./assets/images/ed66c37c0b4f38ef469d56302f844eb5.png" alt="img" draggable="false" />
+                    <img
+                      src="./assets/images/ed66c37c0b4f38ef469d56302f844eb5.png"
+                      alt="img"
+                      draggable="false"
+                    />
                   </div>
                   <h2>Kristina Zasiadko</h2>
                   <span>Bank Manager</span>
-                  <button style="padding: 2px 8px 8px 8px; width: 20%;     margin: 8px;">More</button>
-
+                  <button
+                    style="padding: 2px 8px 8px 8px; width: 20%; margin: 8px"
+                  >
+                    More
+                  </button>
                 </li>
                 <li class="card">
                   <div class="img">
-                    <img src="./assets/images/ed66c37c0b4f38ef469d56302f844eb5.png" alt="img" draggable="false" />
+                    <img
+                      src="./assets/images/ed66c37c0b4f38ef469d56302f844eb5.png"
+                      alt="img"
+                      draggable="false"
+                    />
                   </div>
                   <h2>Donald Horton</h2>
                   <span>App Designer</span>
-                  <button style="padding: 2px 8px 8px 8px; width: 20%;     margin: 8px;">More</button>
+                  <button
+                    style="padding: 2px 8px 8px 8px; width: 20%; margin: 8px"
+                  >
+                    More
+                  </button>
                 </li>
               </ul>
               <i id="right" class="fa-solid fa-angle-right"></i>
@@ -268,86 +330,150 @@
 
         <!-- Footer -->
         <div class="footer">
-          <div class="container">     
-              <div class="row">                       
-                  <div class="col-lg-4 col-sm-4 col-xs-12">
-                      <div class="single_footer">
-                          <h4>Services</h4>
-                          <ul>
-                              <li><a href="#">Lorem Ipsum</a></li>
-                              <li><a href="#">Simply dummy text</a></li>
-                              <li><a href="#">The printing and typesetting </a></li>
-                              <li><a href="#">Standard dummy text</a></li>
-                              <li><a href="#">Type specimen book</a></li>
-                          </ul>
-                      </div>
-                  </div><!--- END COL --> 
-                  <div class="col-md-4 col-sm-4 col-xs-12">
-                      <div class="single_footer single_footer_address">
-                          <h4>Page Link</h4>
-                          <ul>
-                              <li><a href="#">Lorem Ipsum</a></li>
-                              <li><a href="#">Simply dummy text</a></li>
-                              <li><a href="#">The printing and typesetting </a></li>
-                              <li><a href="#">Standard dummy text</a></li>
-                              <li><a href="#">Type specimen book</a></li>
-                          </ul>
-                      </div>
-                  </div><!--- END COL -->
-                  <div class="col-md-4 col-sm-4 col-xs-12">
-                      <div class="single_footer single_footer_address">
-                          <h4>Subscribe today</h4>
-                          <div class="signup_form">                           
-                              <form action="#" class="subscribe">
-                                  <input type="text" class="subscribe__input" placeholder="Enter Email Address">
-                                  <a style="text-decoration: none;" class="subscribe__btn" href=""><i style="color: blackx;" class="fas fa-paper-plane"></i></a>
-                              </form>
-                          </div>
-                      </div>
-                      <div class="social_profile">
-                          <ul>
-                              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                              <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                          </ul>
-                      </div>                          
-                  </div><!--- END COL -->         
-              </div><!--- END ROW --> 
-              <div class="row">
-                  <div class="col-lg-12 col-sm-12 col-xs-12">
-                      <p class="copyright">Copyright © 2019 <a href="#">Akdesign</a>.</p>
-                  </div><!--- END COL -->                 
-              </div><!--- END ROW -->                 
-          </div><!--- END CONTAINER -->
-      </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-sm-4 col-xs-12">
+                <div class="single_footer">
+                  <h4>Services</h4>
+                  <ul>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Simply dummy text</a></li>
+                    <li><a href="#">The printing and typesetting </a></li>
+                    <li><a href="#">Standard dummy text</a></li>
+                    <li><a href="#">Type specimen book</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--- END COL -->
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="single_footer single_footer_address">
+                  <h4>Page Link</h4>
+                  <ul>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Simply dummy text</a></li>
+                    <li><a href="#">The printing and typesetting </a></li>
+                    <li><a href="#">Standard dummy text</a></li>
+                    <li><a href="#">Type specimen book</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--- END COL -->
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="single_footer single_footer_address">
+                  <h4>Subscribe today</h4>
+                  <div class="signup_form">
+                    <form action="#" class="subscribe">
+                      <input
+                        type="text"
+                        class="subscribe__input"
+                        placeholder="Enter Email Address"
+                      />
+                      <a
+                        style="text-decoration: none"
+                        class="subscribe__btn"
+                        href=""
+                        ><i style="color: blackx" class="fas fa-paper-plane"></i
+                      ></a>
+                    </form>
+                  </div>
+                </div>
+                <div class="social_profile">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--- END COL -->
+            </div>
+            <!--- END ROW -->
+            <div class="row">
+              <div class="col-lg-12 col-sm-12 col-xs-12">
+                <p class="copyright">
+                  Copyright © 2019 <a href="#">Akdesign</a>.
+                </p>
+              </div>
+              <!--- END COL -->
+            </div>
+            <!--- END ROW -->
+          </div>
+          <!--- END CONTAINER -->
+        </div>
       </div>
 
       <!-- Sidebar -->
-      <div id="sidebar">
-        <div class="inner">
-          <!-- LOGO -->
-          <section id="search" class="alt">
-            <div class="logo">LOGO</div>
-          </section>
+      <div class="d-flex">
+        <div id="sidebar">
+          <div class="inner">
+            <!-- LOGO -->
+            <section id="search" class="alt">
+              <div class="logo">LOGO</div>
+            </section>
 
-          <!-- Menu -->
-          <nav id="menu">
-            <header class="major">
-              <h2>Menu</h2>
-            </header>
-            <ul>
-              <li><a href="index.html">Ana səhifə</a></li>
-              <li><a href="about.html">Haqqimizda</a></li>
-              <li><a href="form.html">Form</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="gallery.html">QALEREYA</a></li>
-              <li><a href="contact.html">ƏLAQƏ</a></li>
+            <!-- Menu -->
+            <nav id="menu">
+              <header class="major">
+                <h2>Menu</h2>
+              </header>
+              <ul>
+                <li><a id="home" href="#">Ana səhifə</a></li>
+                <li><a href="about.html">Haqqimizda</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">QALEREYA</a></li>
+                <li><a href="contact.html">ƏLAQƏ</a></li>
+              </ul>
+            </nav>
+            <ul class="icons">
+              <li>
+                <a href="#" class="icon brands fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-instagram"
+                  ><span class="label">Instagram</span></a
+                >
+              </li>
             </ul>
-          </nav>
+          </div>
+        </div>
+        <div class="submenu" id="submenu">
+          <div style="top: 0;" class="position-sticky">
+          <div
+            class="submenu_logo d-flex align-items-center justify-content-center"
+          >
+            <div class="fa-2x">logo</div>
+          </div>
+          <div class="submenu_title">Ana Səhifə</div>
+          <ul class="submenu-list">
+            <li class="submenu-per-list"><a href="#">Şirket Profili</a></li>
+            <li class="submenu-per-list"><a href="#">Başkandan Mesaj</a></li>
+            <li class="submenu-per-list">
+              <a href="#">İş Ahlakı Politikası</a>
+            </li>
+          </ul>
+        </div>
         </div>
       </div>
     </div>
+
+    
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -356,5 +482,7 @@
     <script src="assets/js/util.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="/assets/js/slider.js"></script>
+    <script src="/assets/js/submenu.js"></script>
   </body>
 </html>
