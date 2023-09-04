@@ -4,6 +4,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+const submenue = document.getElementsByClassName("submenu")[0];
+ 
 (function ($) {
 
 	var $window = $(window),
@@ -93,13 +95,15 @@
 		.appendTo($sidebar)
 		.on('click', function (event) {
 
+            
+
 			// Prevent default.
 			event.preventDefault();
 			event.stopPropagation();
 
 			// Toggle.
 			$sidebar.toggleClass('inactive');
-
+            submenue.style.display = "none"
 		});
 
 	// Events.
@@ -212,15 +216,15 @@
 							.css('top', -1 * x);
 
 				}
-				else {
+				// else {
 
-					if (y > 0)
-						$sidebar_inner
-							.data('locked', 1)
-							.css('position', 'fixed')
-							.css('top', -1 * x);
+				// 	if (y > 0)
+				// 		$sidebar_inner
+				// 			.data('locked', 1)
+				// 			.css('position', 'fixed')
+				// 			.css('top', -1 * x);
 
-				}
+				// }
 
 			})
 			.on('resize.sidebar-lock', function () {

@@ -1,255 +1,443 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-
-<head>
-	<title>Elements - Editorial by HTML5 UP</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link
-	rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-	crossorigin="anonymous"
-  />
-	<link
+  <head>
+    <title>Elements - Editorial by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-	<link rel="stylesheet" href="assets/css/main.css" />
-</head>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
 
-<body class="is-preload">
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <form action="" class="language-picker__form">
+          <select
+            class="lang-picker"
+            name="language-picker-select"
+            id="language-picker-select"
+          >
+            <option lang="de" value="deutsch">Az</option>
+            <option lang="en" value="english" selected>Eng</option>
+            <option lang="fr" value="francais">Rus</option>
+          </select>
+        </form>
+        <div class="inner">
+          <!-- Header -->
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+          <!-- Content -->
+          <section>
+            <header class="major mt-5">
+              <h2>Form</h2>
+            </header>
 
-		<!-- Main -->
-		<div id="main">
-			<form action="" class="language-picker__form">
-				<select
-				  class="lang-picker"
-				  name="language-picker-select"
-				  id="language-picker-select"
-				>
-				  <option lang="de" value="deutsch">Az</option>
-				  <option lang="en" value="english" selected>Eng</option>
-				  <option lang="fr" value="francais">Rus</option>
-				</select>
-			  </form>
-			<div class="inner">
+            <!-- Content -->
 
-				<!-- Header -->
-			 
+            <!-- Elements -->
+            <div class="row gtr-200">
+              <div class="col-md-6 col-xs-12 col-12-medium">
+                <!-- Text stuff -->
 
-				<!-- Content -->
-				<section>
-					<header class="major mt-5  ">
-						<h2>Form</h2>
-					</header>
+                <!-- Form -->
+                <form method="post" action="#">
+                  <div class="row gtr-uniform">
+                    <div class="col-lg-6 col-sm-12">
+                      <input
+                        type="text"
+                        name="demo-name"
+                        id="demo-name"
+                        value=""
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                      <input
+                        type="email"
+                        name="demo-email"
+                        id="demo-email"
+                        value=""
+                        placeholder="Email"
+                      />
+                    </div>
+                    <!-- Break -->
+                    <div class="col-12">
+                      <select name="demo-category" id="demo-category">
+                        <option value="">- Category -</option>
+                        <option value="1">Manufacturing</option>
+                        <option value="1">Shipping</option>
+                        <option value="1">Administration</option>
+                        <option value="1">Human Resources</option>
+                      </select>
+                    </div>
+                    <!-- Break -->
+                    <div class="col-lg-4 col-sm-12">
+                      <input
+                        type="radio"
+                        id="demo-priority-low"
+                        name="demo-priority"
+                        checked
+                      />
+                      <label for="demo-priority-low">Low</label>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                      <input
+                        type="radio"
+                        id="demo-priority-normal"
+                        name="demo-priority"
+                      />
+                      <label for="demo-priority-normal">Normal</label>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                      <input
+                        type="radio"
+                        id="demo-priority-high"
+                        name="demo-priority"
+                      />
+                      <label for="demo-priority-high">High</label>
+                    </div>
+                    <!-- Break -->
+                    <div class="col-lg-6 col-sm-12">
+                      <input type="checkbox" id="demo-copy" name="demo-copy" />
+                      <label for="demo-copy">Email me a copy</label>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                      <input
+                        type="checkbox"
+                        id="demo-human"
+                        name="demo-human"
+                        checked
+                      />
+                      <label for="demo-human">I am a human</label>
+                    </div>
+                    <!-- Break -->
+                    <div class="col-12">
+                      <textarea
+                        name="demo-message"
+                        id="demo-message"
+                        placeholder="Enter your message"
+                        rows="6"
+                      ></textarea>
+                    </div>
+                    <!-- Break -->
+                    <div class="col-lg-6 col-sm-12">
+                      <ul class="actions">
+                        <li>
+                          <input
+                            type="submit"
+                            value="Send Message"
+                            class="primary"
+                          />
+                        </li>
+                        <li><input type="reset" value="Reset" /></li>
+                      </ul>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Footer -->
+        <!-- <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-sm-4 col-xs-12">
+                <div class="single_footer">
+                  <h4>Services</h4>
+                  <ul>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Simply dummy text</a></li>
+                    <li><a href="#">The printing and typesetting </a></li>
+                    <li><a href="#">Standard dummy text</a></li>
+                    <li><a href="#">Type specimen book</a></li>
+                  </ul>
+                </div>
+              </div>
+          
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="single_footer single_footer_address">
+                  <h4>Page Link</h4>
+                  <ul>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Simply dummy text</a></li>
+                    <li><a href="#">The printing and typesetting </a></li>
+                    <li><a href="#">Standard dummy text</a></li>
+                    <li><a href="#">Type specimen book</a></li>
+                  </ul>
+                </div>
+              </div>
+     
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="single_footer single_footer_address">
+                  <h4>Subscribe today</h4>
+                  <div class="signup_form">
+                    <form action="#" class="subscribe">
+                      <input
+                        type="text"
+                        class="subscribe__input"
+                        placeholder="Enter Email Address"
+                      />
+                      <a
+                        style="text-decoration: none"
+                        class="subscribe__btn"
+                        href=""
+                        ><i style="color: blackx" class="fas fa-paper-plane"></i
+                      ></a>
+                    </form>
+                  </div>
+                </div>
+                <div class="social_profile">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
+            </div>
+      
+            <div class="row">
+              <div class="col-lg-12 col-sm-12 col-xs-12">
+                <p class="copyright">
+                  Copyright © 2019 <a href="#">Akdesign</a>.
+                </p>
+              </div>
+       
+            </div>
+       
+          </div>
+        
+        </div>
+      </div> -->
 
-					<!-- Content -->
+        <div class="section_footer d-flex flex-column w-100">
+          <div class="section_footer-primary d-flex justify-content-around">
+            <div class="footer_primary">
+              <h6>ƏLAQƏ</h6>
+              <div class="footer_primary-contact-details d-flex flex-column">
+                <p>Ünvan: Caspian Plaza, Bakı, Azərbaycan</p>
+                <p>Əlaqə nömrəsi: +994111111111</p>
+                <p>Elektron poçt: info@111.az</p>
+                <ul class="d-flex social-ul">
+                  <li class="social-network-fb">
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/166YukdasimaveLogistika"
+                      class="social-icons"
+                    >
+                      <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="social-network-in">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/company/166-yukdasima-ve-logistika/"
+                      class="social-icons"
+                    >
+                      <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="social-network-ins">
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/166_yukdasima_ve_logistika/"
+                      class="social-icons"
+                    >
+                      <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="social-network-ytb">
+                    <a
+                      target="_blank"
+                      href="https://www.youtube.com/channel/UCmfn7kex_svjeOg7-GRpngg"
+                      class="social-icons"
+                    >
+                      <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer_primary">
+              <h6>XİDMƏTLƏR</h6>
+              <ul class="footer_primary-services">
+                <li>
+                  <a class="footer_primary-service-items" href="#">
+                    Transport
+                  </a>
+                </li>
+                <li>
+                  <a class="footer_primary-service-items" href="#">
+                    Yükdaşıma
+                  </a>
+                </li>
+                <li>
+                  <a class="footer_primary-service-items" href="#">
+                    Xalça yuma
+                  </a>
+                </li>
+                <li>
+                  <a class="footer_primary-service-items" href="#">
+                    Təmizlik Xidməti
+                  </a>
+                </li>
+                <li>
+                  <a class="footer_primary-service-items" href="#">
+                    Evakuasiya
+                  </a>
+                </li>
+                <li>
+                  <a class="footer_primary-service-items" href="#">
+                    Anbar Xidməti
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_primary">
+              <h6>FAYDALI LİNKLƏR</h6>
+              <ul class="footer_primary-services">
+                <li>
+                  <a class="footer_primary-service-items" href="#">
+                    Ana Səhifə
+                  </a>
+                </li>
+                <li>
+                  <a class="footer_primary-service-items" href="about.html">
+                    Haqqımızda
+                  </a>
+                </li>
+                <li>
+                  <a class="footer_primary-service-items" href="form.html">
+                    Form
+                  </a>
+                </li>
+                <li>
+                  <a class="footer_primary-service-items" href="blog.html">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a class="footer_primary-service-items" href="gallery.html">
+                    Qalareya
+                  </a>
+                </li>
+                <li>
+                  <a class="footer_primary-service-items" href="contact.html">
+                    Əlaqə
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="footer_primary-service"></div> -->
+          </div>
+          <div class="section_footer-secondary">
+            <h4>Copyright © 2019 Akdesign.</h4>
+          </div>
+        </div>
+      </div>
+     <!-- Sidebar -->
+     <div class="d-flex">
+      <div id="sidebar">
+        <div style="height: 100vh; position: sticky; top: 0;" class="inner ">
+          <!-- LOGO -->
+           <div>
+            
+            <div class="logo">LOGO</div>
+            <nav id="menu" class="mt-5">
+              <header class="major">
+                <h2>Menu</h2>
+              </header>
+              <ul>
+                <li><a id="home" href="index.html">Ana səhifə</a></li>
+                <li><a href="about.html">Haqqimizda</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">QALEREYA</a></li>
+                <li><a href="contact.html">ƏLAQƏ</a></li>
+              </ul>
+            </nav>
+           </div>
 
+          <!-- Menu -->
+          
 
+          
+          <ul class="icons">
+            <li>
+              <a href="#" class="icon brands fa-twitter"
+                ><span class="label">Twitter</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon brands fa-facebook-f"
+                ><span class="label">Facebook</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon brands fa-instagram"
+                ><span class="label">Instagram</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="submenu" id="submenu">
+        <div style="top: 0" class="position-sticky">
+          <div
+            class="submenu_logo d-flex align-items-center justify-content-center"
+          >
+            <div class="fa-2x">logo</div>
+          </div>
+          <div class="submenu_title">Ana Səhifə</div>
+          <ul class="submenu-list">
+            <li class="submenu-per-list"><a href="#">Şirket Profili</a></li>
+            <li class="submenu-per-list"><a href="#">Başkandan Mesaj</a></li>
+            <li class="submenu-per-list">
+              <a href="#">İş Ahlakı Politikası</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
 
-					<!-- Elements -->
-					<div class="row gtr-200">
-						<div class="col-md-6 col-xs-12 col-12-medium">
-
-							<!-- Text stuff -->
-
-							<!-- Form -->
-							<form method="post" action="#">
-								<div class="row gtr-uniform">
-									<div class="col-lg-6 col-sm-12">
-										<input type="text" name="demo-name" id="demo-name" value=""
-											placeholder="Name" />
-									</div>
-									<div class="col-lg-6 col-sm-12">
-										<input type="email" name="demo-email" id="demo-email" value=""
-											placeholder="Email" />
-									</div>
-									<!-- Break -->
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<!-- Break -->
-									<div class="col-lg-4 col-sm-12">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low</label>
-									</div>
-									<div class="col-lg-4 col-sm-12">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal</label>
-									</div>
-									<div class="col-lg-4 col-sm-12">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High</label>
-									</div>
-									<!-- Break -->
-									<div class="col-lg-6 col-sm-12">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy</label>
-									</div>
-									<div class="col-lg-6 col-sm-12">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human</label>
-									</div>
-									<!-- Break -->
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message"
-											rows="6"></textarea>
-									</div>
-									<!-- Break -->
-									<div class="col-lg-6 col-sm-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-									
-								</div>
-							</form>
-
-
-
-
-						</div>
-					</div>
-
-				</section>
-			</div>
-    <!-- Footer -->
-	<div class="footer">
-		<div class="container">     
-			<div class="row">                       
-				<div class="col-lg-4 col-sm-4 col-xs-12">
-					<div class="single_footer">
-						<h4>Services</h4>
-						<ul>
-							<li><a href="#">Lorem Ipsum</a></li>
-							<li><a href="#">Simply dummy text</a></li>
-							<li><a href="#">The printing and typesetting </a></li>
-							<li><a href="#">Standard dummy text</a></li>
-							<li><a href="#">Type specimen book</a></li>
-						</ul>
-					</div>
-				</div><!--- END COL --> 
-				<div class="col-md-4 col-sm-4 col-xs-12">
-					<div class="single_footer single_footer_address">
-						<h4>Page Link</h4>
-						<ul>
-							<li><a href="#">Lorem Ipsum</a></li>
-							<li><a href="#">Simply dummy text</a></li>
-							<li><a href="#">The printing and typesetting </a></li>
-							<li><a href="#">Standard dummy text</a></li>
-							<li><a href="#">Type specimen book</a></li>
-						</ul>
-					</div>
-				</div><!--- END COL -->
-				<div class="col-md-4 col-sm-4 col-xs-12">
-					<div class="single_footer single_footer_address">
-						<h4>Subscribe today</h4>
-						<div class="signup_form">                           
-							<form action="#" class="subscribe">
-								<input type="text" class="subscribe__input" placeholder="Enter Email Address">
-								<a style="text-decoration: none;" class="subscribe__btn" href=""><i style="color: blackx;" class="fas fa-paper-plane"></i></a>
-
-							</form>
-						</div>
-					</div>
-					<div class="social_profile">
-						<ul>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-						</ul>
-					</div>                          
-				</div><!--- END COL -->         
-			</div><!--- END ROW --> 
-			<div class="row">
-				<div class="col-lg-12 col-sm-12 col-xs-12">
-					<p class="copyright">Copyright © 2019 <a href="#">Akdesign</a>.</p>
-				</div><!--- END COL -->                 
-			</div><!--- END ROW -->                 
-		</div><!--- END CONTAINER -->
-	</div>
-		</div>
-		<!-- Sidebar -->
-		<div id="sidebar">
-			<div class="inner">
-
-				<!-- LOGO -->
-				<section id="search" class="alt">
-					<div class="logo">LOGO</div>
-				</section>
-
-				<!-- Menu -->
-				<nav id="menu">
-					<header class="major">
-						<h2>Menu</h2>
-					</header>
-					<ul>
-						<li><a href="index.html">Ana səhifə</a></li>
-						<li><a href="about.html">Haqqimizda</a></li>
-						<li><a href="form.html">Form</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="gallery.html">QALEREYA</a></li>
-						<li><a href="contact.html">ƏLAQƏ</a></li>
-
-					</ul>
-				</nav>
-				<ul class="icons">
-					<li>
-					  <a href="#" class="icon brands fa-twitter"
-						><span class="label">Twitter</span></a
-					  >
-					</li>
-					<li>
-					  <a href="#" class="icon brands fa-facebook-f"
-						><span class="label">Facebook</span></a
-					  >
-					</li>
-					<li>
-					  <a href="#" class="icon brands fa-instagram"
-						><span class="label">Instagram</span></a
-					  >
-					</li>
-				  </ul>
-
-
-
-				<!-- Section -->
-
-
-
-
-			</div>
-		</div>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

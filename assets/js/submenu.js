@@ -1,14 +1,17 @@
 const menuItem = document.getElementById("home")
 const submenu = document.getElementsByClassName("submenu")[0]
+ function openSubmenu() {
  
-console.log("submenu",submenu)
-function openSubmenu() {
-    // alert("111")
-    if (submenu.style.display === "none") {
-        submenu.style.display = "block";
+
+     if (submenu.style.left === "0px" || submenu.style.left === ""  ) {
+        submenu.style.left = "317px";
+        submenu.style.display = "flex"
     } else {
-        submenu.style.display = "none";
+        submenu.style.left = "0";
+        // setTimeout(()=>{
+        //     submenu.style.display = "none"
+        // },1000)
     }
   }
 menuItem.addEventListener("click", ()=>  openSubmenu())
-console.log("menuItem",menuItem)
+ 

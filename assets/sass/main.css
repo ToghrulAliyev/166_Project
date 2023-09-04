@@ -2585,12 +2585,12 @@ button:disabled,
     position: absolute;
     top: 0;
   }
-  #sidebar > .inner:after {
+  /* #sidebar > .inner:after {
     content: "";
     display: block;
     height: 4em;
     width: 100%;
-  }
+  } */
   #sidebar .toggle {
     text-indent: 6em;
     width: 6em;
